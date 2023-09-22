@@ -20,9 +20,9 @@ jobs:
           node-version: "16" # Adjust to your preferred Node.js version
 
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
-          path: scholar_app/scholar_app
+          path: /home/runner/work/bug_vcsch_2023/scholar_app
 
       - name: Debug Directory
         run: |
