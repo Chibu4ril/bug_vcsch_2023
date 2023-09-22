@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - main
+
+name: 🚀 Deploy app on push
+
+jobs:
+  install-build-and-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Adjust to your preferred Node.js version
+
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
+      #   with:
+      #     path: scholar_app
+
+      # - name: Navigate to scholar_app directory
+      #   run: cd scholar_app/
+
+      - name: Install project dependencies with npm
+        run: |
+          sudo npm install
+
+      - name: Build the Next.js app
+        run: |
+          sudo npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.vcscholar.org
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /vcscholar.org/
