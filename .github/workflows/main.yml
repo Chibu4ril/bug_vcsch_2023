@@ -36,7 +36,8 @@ jobs:
 
       - name: Install project dependencies with npm
         run: |
-          npm install
+          cd /home/runner/work/bug_vcsch_2023/bug_vcsch_2023/scholar_app/scholar_app
+          npm install --prefix ./scholar_app
 
       - name: Build the Next.js app
         run: |
