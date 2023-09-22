@@ -14,7 +14,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14" # Adjust to your preferred Node.js version
+          node-version: "16" # Adjust to your preferred Node.js version
 
       - name: Checkout code
         uses: actions/checkout@v3
