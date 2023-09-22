@@ -18,14 +18,17 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          path: /scholar_app/package.json
 
-      - name: Install project dependencies with Yarn
+      - name: Install project dependencies with npm
         run: |
-          yarn install
+          cd /scholar_app
+          sudo npm install
 
       - name: Build the Next.js app
         run: |
-          yarn run build
+          sudo npm run build
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
