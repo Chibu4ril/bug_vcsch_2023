@@ -19,11 +19,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          path: /scholar_app/package.json
+          path: scholar_app
 
       - name: Install project dependencies with npm
         run: |
-          cd /scholar_app
+          cd scholar_app
           sudo npm install
 
       - name: Build the Next.js app
