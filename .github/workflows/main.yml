@@ -22,7 +22,7 @@ jobs:
           path: scholar_app
 
       - name: Navigate to scholar_app directory
-        run: cd scholar_app
+        run: cd scholar_app/
 
       - name: Install project dependencies with npm
         run: |
