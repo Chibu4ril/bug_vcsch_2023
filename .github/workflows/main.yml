@@ -27,7 +27,9 @@ jobs:
           ls -l
 
       - name: Navigate to scholar_app directory
-        run: cd /home/runner/work/bug_vcsch_2023/scholar_app
+        run: |
+          cd scholar_app
+          ls
 
       - name: Install project dependencies with npm
         run: |
