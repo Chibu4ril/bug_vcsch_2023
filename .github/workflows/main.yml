@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          path: bug_vcsch_2023/scholar_app
+          path: scholar_app
 
       - name: Navigate to scholar_app directory
         run: cd scholar_app
