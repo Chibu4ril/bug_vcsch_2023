@@ -41,7 +41,8 @@ jobs:
 
       - name: Build the Next.js app
         run: |
-          sudo npm run build
+          cd /home/runner/work/bug_vcsch_2023/bug_vcsch_2023/scholar_app
+          npm run build --prefix ./scholar_app
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
