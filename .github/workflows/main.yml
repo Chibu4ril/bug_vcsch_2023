@@ -24,6 +24,11 @@ jobs:
       - name: Navigate to scholar_app directory
         run: cd /home/runner/work/bug_vcsch_2023/scholar_app
 
+      - name: Debug Directory
+        run: |
+          pwd
+          ls -l
+
       - name: Install project dependencies with npm
         run: |
           npm install
