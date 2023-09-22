@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -19,7 +22,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          path: scholar_app
+          path: scholar_app/scholar_app
 
       - name: Debug Directory
         run: |
