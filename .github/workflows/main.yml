@@ -50,4 +50,4 @@ jobs:
           server: ftp.vcscholar.org
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /vcscholar.org/
+          server-dir: ./
