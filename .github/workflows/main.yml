@@ -21,9 +21,11 @@ jobs:
         with:
           path: scholar_app
 
+      - name: Navigate to scholar_app directory
+        run: cd scholar_app
+
       - name: Install project dependencies with npm
         run: |
-          cd scholar_app
           sudo npm install
 
       - name: Build the Next.js app
