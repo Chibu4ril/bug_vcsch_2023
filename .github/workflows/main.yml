@@ -28,7 +28,7 @@ jobs:
 
       - name: Navigate to scholar_app directory
         run: |
-          cd scholar_app
+          cd scholar_app/scholar_app
           ls
 
       - name: Install project dependencies with npm
