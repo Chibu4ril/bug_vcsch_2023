@@ -46,7 +46,7 @@ jobs:
 
       - name: Copy Next.js build files
         run: |
-          cp -r /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/* /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/
+          cp -r /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/scholar_app/* /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
