@@ -44,10 +44,14 @@ jobs:
           cd /home/runner/work/bug_vcsch_2023/bug_vcsch_2023/scholar_app
           npm run build --prefix ./scholar_app
 
+      - name: Copy Next.js build files
+        run: |
+          cp -r /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/scholar_app/.next/* /home/runner/work/bug_vcscholar_2023/bug_vcscholar_2023/scholar_app/
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.vcscholar.org
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir:
+          server-dir: /home/chibrqvw/vcscholar.app/
