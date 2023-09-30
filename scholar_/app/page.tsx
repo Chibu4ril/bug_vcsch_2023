@@ -1,11 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import LandingPage from "./extranet/landingpage/LandingPage";
+"use client";
+import Navigate from "@/src/navbar/Navigate";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Requirements from "./requirements/page";
 
 export default function Home() {
   return (
-    <main>
-      <LandingPage></LandingPage>
-    </main>
+    <>
+      <Navigate></Navigate>
+      <Requirements></Requirements>
+    </>
   );
 }

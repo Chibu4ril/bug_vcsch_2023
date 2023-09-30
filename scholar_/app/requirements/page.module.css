@@ -1,0 +1,13 @@
+.container.custom {
+  max-width: 1180px !important;
+}
+
+.customCard {
+  background-color: #f4f4fc;
+  border-radius: 40px;
+}
+
+.iconCard {
+  border-radius: 5px;
+  background-color: #fbf9fe;
+}
