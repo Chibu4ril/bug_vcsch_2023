@@ -1,0 +1,18 @@
+.myColoredCards {
+  background-color: #f4f4fc;
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.iconCard {
+  border-radius: 5px;
+  background: #fbf9fe;
+  @apply p-3;
+}
+
+.reqText {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
