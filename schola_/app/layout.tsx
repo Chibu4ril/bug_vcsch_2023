@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Cabin, Inter } from "next/font/google";
+import { Cabin } from "next/font/google";
 
-const cabin = Cabin({ subsets: ["latin"] });
+const cabin = Cabin({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "VCScholar | Transforming Dreams into Degrees",
