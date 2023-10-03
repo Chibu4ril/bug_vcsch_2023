@@ -1,0 +1,4 @@
+.heroBg {
+  background-color: #e1e1f0;
+  @apply py-24;
+}

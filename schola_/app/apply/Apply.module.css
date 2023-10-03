@@ -3,3 +3,8 @@
   padding: 2rem;
   border-radius: 40px;
 }
+
+.myColoredCardsBorderless {
+  background-color: #f4f4fc;
+  padding: 1rem;
+}

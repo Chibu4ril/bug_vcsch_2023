@@ -6,6 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
+    "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
     extend: {
@@ -21,6 +22,7 @@ const config: Config = {
     require("@tailwindcss/typography"),
     require("daisyui"),
     require("@tailwindcss/forms"),
+    require("flowbite/plugin"),
   ],
 
   daisyui: {

@@ -230,7 +230,7 @@ export const CheckBox: React.FC<CheckboxProps> = ({
         <input
           checked={checked}
           type="checkbox"
-          className="checkbox checkbox-primary rounded-sm  "
+          className="checkbox checkbox-primary rounded-sm checkbox-sm "
         />
         <span className="label-text font-bold text-base mx-3">{label}</span>
       </label>
@@ -238,33 +238,39 @@ export const CheckBox: React.FC<CheckboxProps> = ({
   );
 };
 
-interface FileUploadProps {
+interface FilesUpProps {
   label?: string;
   rightLabel: string;
   errorLabel: string;
   infoLabel: string;
+  className?: string;
 }
 
-export const FileUpload: React.FC<FileUploadProps> = ({
+export const FileUpload: React.FC<FilesUpProps> = ({
   label,
   rightLabel,
   errorLabel,
   infoLabel,
+  className,
 }) => {
   return (
-    <div className="form-control w-full max-w-xs">
-      <label className="label">
-        <span className="label-text">{label}</span>
-        <span className="label-text-alt">{rightLabel}</span>
-      </label>
-      <input
-        type="file"
-        className="file-input file-input-bordered w-full max-w-xs"
-      />
-      <label className="label">
-        <span className="label-text-alt">{errorLabel}</span>
-        <span className="label-text-alt">{infoLabel}</span>
-      </label>
+    <div>
+      <div className="form-control ">
+        <label className="label">
+          <span className="label-text">{label}</span>
+          <span className="label-text-alt">{rightLabel}</span>
+        </label>
+        <input
+          type="file"
+          className={
+            "file-input file-input-bordered rounded-sm file-input-primary"
+          }
+        />
+        <label className="label">
+          <span className="label-text-alt">{errorLabel}</span>
+          <span className="label-text-alt">{infoLabel}</span>
+        </label>
+      </div>
     </div>
   );
 };

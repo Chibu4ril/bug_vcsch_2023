@@ -1,11 +1,14 @@
 import React from "react";
 import Requirement from "@/app/criteria/page";
 import Link from "next/link";
+import NavBar from "@/app/components/navbar/NavBar";
+import HeroSection from "@/app/components/hero/HeroSection";
 
 const Landingpage = () => {
   return (
     <div>
-      <Link href="/criteria">Apply</Link>
+      <NavBar></NavBar>
+      <HeroSection></HeroSection>
     </div>
   );
 };
