@@ -38,3 +38,10 @@ export const MenuIcon = () => {
     </div>
   );
 };
+export const GradCapIcon = () => {
+  return (
+    <div className="flex">
+      <Icon icon="ph:graduation-cap" className="text-xl me-2" />
+    </div>
+  );
+};
