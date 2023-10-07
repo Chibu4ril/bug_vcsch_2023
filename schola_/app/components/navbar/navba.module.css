@@ -1,0 +1,22 @@
+@media (min-width: 1280px) {
+  .navContainer {
+    max-width: 1280px !important;
+  }
+}
+
+.navActive {
+  color: #6141db;
+  border-bottom: 1px solid #6141db;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 0px;
+  opacity: 1;
+  padding-bottom: 6px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navActive:hover {
+  background-color: #6141db !important;
+  color: #fff !important;
+  border-bottom: 1px solid #6141db;
+}

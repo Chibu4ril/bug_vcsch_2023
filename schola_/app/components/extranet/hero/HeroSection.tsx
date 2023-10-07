@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
+import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const EmailSearchBar = () => {
   return (
@@ -9,20 +10,19 @@ export const EmailSearchBar = () => {
         <input
           type="text"
           id="default-search"
-          className="block w-full p-4 text-sm text-gray-900 input-bordered rounded-full input "
+          className="block w-full p-5 py-7 text-sm text-gray-900 input-bordered rounded-full input "
           placeholder="Enter your email address..."
           required
         />
-        <button
-          type="submit"
-          className="text-white absolute right-2.5 bottom-1.5 px-20 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  py-2 "
-        >
-          Get Started
-        </button>
+
+        <PrimaryButton
+          label="Get Started"
+          className="text-white absolute right-2 bottom-1.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  "
+        ></PrimaryButton>
       </div>
       <p className="text-center mt-3 text-sm text-gray-500">
         {" "}
-        No repayment. No Collateral
+        No repayment. <span className="ms-5"> No Collateral</span>
       </p>
     </form>
   );
@@ -48,23 +48,39 @@ const CarouselBox = () => {
 
 const HeroSection = () => {
   return (
-    <div className={styles.heroBg}>
-      <div className="container mx-auto py-28">
-        <div className="grid grid-cols-2 ">
+    <div className={`${styles.heroBg} ${styles.heroLiner}`}>
+      <div className={`${styles.navContainer} mx-auto py-28 `}>
+        <div className="grid grid-cols-2 gap-40 ">
           <div className="flex flex-col justify-center">
-            <p className="mb-2">
-              <span className="text-purple-700">Transforming Dreams into </span>
-              <span className="text-green-500">Degrees.</span>
-            </p>
-            <h1 className="text-6xl font-bold">
-              Secure funding for your education.
-            </h1>
-            <p className="font-thin mt-5">
-              Our mission is to help students who face financial challenges
-              access the funding they need. We offer financial assistance to
-              those from underprivileged backgrounds who meet our award
-              criteria.
-            </p>
+            <div className="relative">
+              <Image
+                src={"/smarter.svg"}
+                width={150}
+                height={150}
+                alt=""
+                className="absolute right-0"
+                style={{ top: -10 }}
+              ></Image>
+            </div>
+            <div className="">
+              <p className=" ">
+                <span className="text-purple-700">
+                  Transforming Dreams into{" "}
+                </span>
+                <span className="text-green-500">Degrees.</span>
+              </p>
+
+              <h1 className="text-6xl font-bold mt-5">
+                Secure funding for your education.
+              </h1>
+              <p className="mt-7">
+                Our mission is to help students who face financial challenges
+                access the funding they need. We offer financial assistance to
+                those from underprivileged backgrounds who meet our award
+                criteria.
+              </p>
+            </div>
+
             <div className="my-10">
               <EmailSearchBar></EmailSearchBar>
             </div>
@@ -76,7 +92,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <Image
           src={"/heroLine.svg"}
           alt="line"
@@ -84,7 +100,7 @@ const HeroSection = () => {
           height={1}
           className="w-full"
         ></Image>
-      </div>
+      </div> */}
     </div>
   );
 };

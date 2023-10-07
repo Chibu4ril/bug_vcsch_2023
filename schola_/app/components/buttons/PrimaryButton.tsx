@@ -1,28 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import React, { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 interface PrimaryButtonProps {
-  children: ReactNode;
+  label: string;
   className: string;
-  href: string;
 }
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({
-  children,
+export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+  label,
   className,
-  href,
 }) => {
   return (
     <div>
       <Link
-        href={href}
-        className={`btn + " " + ${styles.myPrimaryBtn} + " " + ${className}`}
+        className={`text-white px-14 btn capitalize font-bold rounded-full py-0 ${styles.bgPrimary} ${className}`}
+        href="/apply"
       >
-        {children}
+        {label}
       </Link>
     </div>
   );
 };
-
-export default PrimaryButton;

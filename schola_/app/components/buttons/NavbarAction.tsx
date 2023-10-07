@@ -2,15 +2,20 @@
 
 import Link from "next/link";
 import React from "react";
+import styles from "./Button.module.css";
 
 interface NavbarActionProps {
   label: string;
+  className: string;
 }
-export const NavbarAction: React.FC<NavbarActionProps> = ({ label }) => {
+export const NavbarAction: React.FC<NavbarActionProps> = ({
+  label,
+  className,
+}) => {
   return (
     <div>
       <Link
-        className="btn btn-primary py-0 px-10 rounded-full capitalize"
+        className={`text-white px-14 btn capitalize font-bold rounded-full py-0 ${styles.bgPrimary} ${className}`}
         href="/apply"
       >
         {label}

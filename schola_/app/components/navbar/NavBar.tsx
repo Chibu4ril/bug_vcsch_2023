@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import mainLogo from "/public/mainLogo.svg";
 import { NavbarAction } from "../buttons/NavbarAction";
+import styles from "./navba.module.css";
+import LinkButton from "../buttons/LinkButton";
 
 const menuData = [
   {
@@ -50,7 +52,9 @@ const MenuItem: React.FC<MenuItemProps> = ({ item, activeLabel }) => {
   const isActive = item.label === activeLabel;
   return (
     <li>
-      <a className={isActive ? "active" : ""}>{item.label} </a>
+      <a className={isActive ? styles.navActive : "" + "hover:rounded-sm mx-2"}>
+        {item.label}{" "}
+      </a>
       {item.subMenu.length > 0 && (
         <ul>
           {item.subMenu.map((subItem, index) => (
@@ -66,8 +70,8 @@ const NavBar = ({}) => {
   const activeLabel = "Home";
   return (
     <div>
-      <div className="container mx-auto">
-        <div className="navbar bg-base-100">
+      <div className={`${styles.navContainer} mx-auto`}>
+        <div className="navbar bg-base-100  ">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden"></label>
@@ -110,8 +114,11 @@ const NavBar = ({}) => {
               ))}
             </ul>
           </div>
-          <div className="navbar-end">
-            <NavbarAction label="Apply Now"></NavbarAction>
+          <div className="navbar-end flex">
+            <LinkButton href="" className=" me-10">
+              Login
+            </LinkButton>
+            <NavbarAction label="Apply Now" className="ms-5"></NavbarAction>
           </div>
         </div>
       </div>

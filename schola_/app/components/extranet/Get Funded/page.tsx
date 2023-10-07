@@ -1,16 +1,19 @@
 import Image from "next/image";
-import PrimaryButton from "../../buttons/PrimaryButton";
+import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 const GetFunded = () => {
   return (
     <div>
       <div className="container mx-auto my-20">
-        <Image
-          src={"/assetTop.svg"}
-          alt="asset"
-          width={100}
-          height={100}
-        ></Image>
+        <div className="relative">
+          <Image
+            src={"/assetTop.svg"}
+            alt="asset"
+            width={100}
+            height={100}
+            className="absolute"
+          ></Image>
+        </div>
         <div className="text-center">
           <h1 className="text-4xl font-extrabold">Get Funded Easily?</h1>
           <p className="w-1/2 text-lg mx-auto mt-4">
@@ -120,25 +123,28 @@ const GetFunded = () => {
 
           <div className="mx-auto mt-20 flex justify-center gap-5">
             <div className="">
-              <PrimaryButton href="" className="">
+              <PrimaryButton
+                className=""
+                label="
                 Apply Now
-              </PrimaryButton>
+                "
+              ></PrimaryButton>
             </div>
             <div>
-              <PrimaryButton href="" className="">
-                Apply Now
-              </PrimaryButton>
+              <PrimaryButton label="Apply Now" className=""></PrimaryButton>
             </div>
           </div>
         </div>
 
-        <Image
-          src={"./assetTop.svg"}
-          alt="asset"
-          width={100}
-          height={100}
-          className="relative"
-        ></Image>
+        <div className="relative">
+          <Image
+            src={"./assetTop.svg"}
+            alt="asset"
+            width={100}
+            height={100}
+            className="absolute bottom-0 right-0"
+          ></Image>
+        </div>
       </div>
     </div>
   );

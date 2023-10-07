@@ -3,3 +3,12 @@
 
   border-radius: 4px;
 } */
+
+.bgPrimary {
+  background: linear-gradient(95deg, #6141db 46.29%, #795ed2 98.02%);
+  @apply focus:ring-4 focus:outline-none focus:ring-blue-300;
+}
+
+.bgPrimary:hover {
+  background: #795ed2;
+}
