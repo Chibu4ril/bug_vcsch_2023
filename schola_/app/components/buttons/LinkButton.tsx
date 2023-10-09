@@ -7,10 +7,14 @@ interface LinkButtonProps {
   href: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ children, href }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({
+  children,
+  href,
+  className,
+}) => {
   return (
-    <div>
-      <a className="link-primary" href={href}>
+    <div className="my-auto">
+      <a className={className} href={href}>
         {children}
       </a>
     </div>

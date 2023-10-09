@@ -5,7 +5,7 @@ const ApplyButton = () => {
   return (
     <div>
       <Link
-        href="/preview"
+        href="./"
         className="btn btn-primary btn-wide capitalize rounded-md"
       >
         Preview Application Details

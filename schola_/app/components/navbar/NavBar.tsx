@@ -71,7 +71,7 @@ const NavBar = ({}) => {
   return (
     <div>
       <div className={`${styles.navContainer} mx-auto`}>
-        <div className="navbar bg-base-100  ">
+        <div className="navbar  ">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden"></label>
@@ -104,6 +104,7 @@ const NavBar = ({}) => {
                 alt="VCScholar Logo"
                 width={130}
                 height={80}
+                className=""
               ></Image>
             </a>
           </div>

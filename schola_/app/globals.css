@@ -14,4 +14,12 @@
 
 body {
   color: rgb(var(--textColor));
+  background-color: #fbf9fe !important;
+}
+
+body .text-primary {
+  color: #6242dc !important;
+}
+body .link-primary {
+  color: #6242dc !important;
 }

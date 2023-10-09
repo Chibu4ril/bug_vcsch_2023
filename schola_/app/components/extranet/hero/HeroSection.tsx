@@ -91,16 +91,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* <div>
-        <Image
-          src={"/heroLine.svg"}
-          alt="line"
-          width={1}
-          height={1}
-          className="w-full"
-        ></Image>
-      </div> */}
     </div>
   );
 };

@@ -1,0 +1,39 @@
+@media (min-width: 1280px) {
+  .navContainer {
+    max-width: 1280px !important;
+  }
+}
+
+.iconCard {
+  border-radius: 5px;
+  background: #ece7fb;
+}
+
+.wfCard {
+  border-radius: 10px;
+  background: rgba(165, 176, 234, 0.3);
+}
+.bgTrust {
+  background-color: rgba(82, 56, 194);
+}
+
+.joinBg {
+  background-image: url("/joinSect.png"); /* Replace 'pattern.png' with your pattern image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  height: 100%;
+  width: 100%;
+}
+.partnerBg {
+  background-color: rgba(228, 231, 246, 0.6);
+}
+
+.testimonialBg {
+  background-image: url("/testimonialBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  width: 100%;
+}

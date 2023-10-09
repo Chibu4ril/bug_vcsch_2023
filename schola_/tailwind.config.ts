@@ -26,7 +26,15 @@ const config: Config = {
   ],
 
   daisyui: {
-    themes: ["winter"],
+    themes: [
+      {
+        mytheme: {
+          primary: "#6242DC",
+        },
+      },
+
+      "winter",
+    ],
   },
 };
 export default config;
