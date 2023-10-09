@@ -109,6 +109,27 @@ export const Handshake = () => {
   );
 };
 
+interface FundsIconProps {
+  className: string;
+}
+
+export const FundsIcon: React.FC<FundsIconProps> = ({ className }) => {
+  return (
+    <Icon
+      icon="streamline:money-wallet-money-payment-finance-wallet"
+      className={className}
+    />
+  );
+};
+
+interface TransformIconProps {
+  className: string;
+}
+
+export const TransformIcon: React.FC<TransformIconProps> = ({ className }) => {
+  return <Icon icon="ic:round-transform" className={className} />;
+};
+
 interface LaptopIconProps {
   className: string;
 }

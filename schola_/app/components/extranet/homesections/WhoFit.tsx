@@ -10,7 +10,7 @@ import styles from "./WhatWeDO.module.css";
 const WhoFit = () => {
   return (
     <div>
-      <div className={`${styles.navContainer} mx-auto mb-20 `}>
+      <div className={`${styles.navContainer} mx-auto my-20 `}>
         <div className="text-center mb-10">
           <h1 className="text-4xl font-extrabold">Who is a good fit?</h1>
           <p className="w-1/2 text-lg mx-auto mt-4">

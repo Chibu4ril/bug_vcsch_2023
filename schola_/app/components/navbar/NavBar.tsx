@@ -52,7 +52,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item, activeLabel }) => {
   const isActive = item.label === activeLabel;
   return (
     <li>
-      <a className={isActive ? styles.navActive : "" + "hover:rounded-sm mx-2"}>
+      <a className={isActive ? styles.navActive : "" + "hover:rounded-sm "}>
         {item.label}{" "}
       </a>
       {item.subMenu.length > 0 && (
@@ -116,7 +116,7 @@ const NavBar = ({}) => {
             </ul>
           </div>
           <div className="navbar-end flex">
-            <LinkButton href="" className=" me-10">
+            <LinkButton href="" className="hover:text-primary">
               Login
             </LinkButton>
             <NavbarAction label="Apply Now" className="ms-5"></NavbarAction>

@@ -5,12 +5,15 @@ import {
   ControlIcon,
   DonateIcon,
   DoubleCaret,
+  FundsIcon,
   GoalIcon,
   GradCapIcon,
   GuideIcon,
   Handshake,
   LaptopIcon,
   Strategy,
+  SupportIcon,
+  TransformIcon,
   TransparencyIcon,
 } from "../../Icons";
 import styles from "./WhatWeDO.module.css";
@@ -19,8 +22,8 @@ import LinkButton from "../../buttons/LinkButton";
 
 const WhatWeDo = () => {
   return (
-    <div className="">
-      <div className={`${styles.navContainer} mx-auto py-28 `}>
+    <div className={``}>
+      <div className={`${styles.navContainer} mx-auto pb-28 `}>
         <div className="text-center">
           <h1 className="text-4xl font-extrabold">What we do?</h1>
           <p className="w-1/2 text-lg mx-auto mt-4">
@@ -36,14 +39,14 @@ const WhatWeDo = () => {
             </h1>
           </div>
           <div className=" grid grid-cols-2 grid-flow-dense mt-20">
-            <ul>
+            <ul className="self-center">
               <li className="mb-10">
                 <div className="flex align-top gap-5">
                   <div>
                     <div
                       className={` ${styles.iconCard} p-3 justify-center align-middle`}
                     >
-                      <GradCapIcon></GradCapIcon>
+                      <FundsIcon className="text-primary text-2xl"></FundsIcon>
                     </div>
                   </div>
                   <div>
@@ -66,7 +69,7 @@ const WhatWeDo = () => {
                     <div
                       className={` ${styles.iconCard} p-3 justify-center align-middle`}
                     >
-                      <Strategy></Strategy>
+                      <SupportIcon className="text-primary text-2xl"></SupportIcon>
                     </div>
                   </div>
                   <div>
@@ -88,7 +91,7 @@ const WhatWeDo = () => {
                     <div
                       className={` ${styles.iconCard} p-3 justify-center align-middle`}
                     >
-                      <Handshake></Handshake>
+                      <TransformIcon className="text-primary text-2xl"></TransformIcon>
                     </div>
                   </div>
                   <div>
@@ -121,7 +124,7 @@ const WhatWeDo = () => {
             alt=""
             width={570}
             height={1}
-            className="absolute -right-80 -bottom-28 -z-10"
+            className="absolute md:-right-80 top-80"
           ></Image>
         </div>
 
@@ -151,7 +154,7 @@ const WhatWeDo = () => {
               <h1 className="text-3xl font-bold mb-10">
                 One Micro-Donation at a Time
               </h1>
-              <ul>
+              <ul className="self-center">
                 <li className="mb-10">
                   <div className="flex align-top gap-5">
                     <div>

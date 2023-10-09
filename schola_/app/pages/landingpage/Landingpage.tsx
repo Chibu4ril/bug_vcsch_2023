@@ -10,9 +10,9 @@ import TrustSection from "@/app/components/extranet/homesections/TrustSection";
 import JoinUs from "@/app/components/extranet/homesections/JoinUs";
 import Partners from "@/app/components/extranet/homesections/Partners";
 import Testimonial from "@/app/components/extranet/homesections/Testimonial";
-import FAQs from "@/app/components/extranet/Accordion/FAQs";
 import BlogSect from "@/app/components/extranet/Blog/BlogSect";
 import Footer from "@/app/components/extranet/Footer/FooterSection";
+import FAQs from "@/app/components/extranet/Accordion/FAQs";
 
 const Landingpage = () => {
   return (
